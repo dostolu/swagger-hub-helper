@@ -37,6 +37,7 @@ jobs:
       - run: yarn test
 
       - deploy:
+          name: Publish to NPM
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               echo -e "$NPM_USER\n$NPM_PASS\n$NPM_EMAIL" | npm login
