@@ -2,10 +2,11 @@
 const request = require('request');
 const fs = require('fs');
 
-const packageJson = require(`${__dirname}/package.json`);
+const root = process.cwd();
+const packageJson = require(`${root}/package.json`);
 
 try {
-  const api = fs.readFileSync(`${__dirname}./apiDocs/swagger.yaml`);
+  const api = fs.readFileSync(`${root}./apiDocs/swagger.yaml`);
   const apiName = process.env.SWAGGERHUB_API_NAME || 'dostolu.online';
   const apiKey = process.env.SWAGGERHUB_API_KEY;
 

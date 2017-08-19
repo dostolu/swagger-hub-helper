@@ -1,6 +1,6 @@
 {
   "name": "@dostolu/swagger-hub-helper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "test": "npm run test:lint",
     "test:lint": "eslint ."
