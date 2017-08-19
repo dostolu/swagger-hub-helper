@@ -1,0 +1,24 @@
+{
+  "name": "@dostolu/swagger-hub-helper",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "npm run test:lint",
+    "test:lint": "eslint ."
+  },
+  "bin": {
+    "swagger-hub-helper-export": "src/export-to-swagger-hub.js"
+  },
+  "description": "Swaggerhub Helper functions",
+  "main": "src/index.js",
+  "repository": "git@github.com:dostolu/swagger-hub-helper.git",
+  "author": "dostolu <dostolu.online@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
